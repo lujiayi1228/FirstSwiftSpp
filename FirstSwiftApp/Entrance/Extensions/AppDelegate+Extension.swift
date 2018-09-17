@@ -12,7 +12,8 @@ import UIKit
 extension AppDelegate : MainViewLogicable{
     //初始化app设置，可以在这里提前替换方法，加载组件等
     func initAppConfig(){
-        UIFont.initializeMethod();
+        UIFont.initializeMethod()
+        viewControllerAopConfig()
     }
     
 }

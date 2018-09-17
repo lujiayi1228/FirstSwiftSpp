@@ -13,8 +13,8 @@ import RxCocoa
 
 class UserCenterMainVC: RootVC {
     
-    lazy var tableview = { () -> UITableView in
-        let tab = UITableView.init(frame: screenFrame, style: .grouped)
+    lazy var tableview : myTableView = { () -> myTableView in
+        let tab = myTableView.init(frame: screenFrame, style: .grouped)
         tab.top = 20
         tab.height -= tabbarHeight
         tab.height -= 20
@@ -55,6 +55,7 @@ class UserCenterMainVC: RootVC {
             
         }).disposed(by: disposeBag)
     }
+
 }
 
 extension UserCenterMainVC : UITableViewDelegate {
@@ -74,6 +75,10 @@ extension UserCenterMainVC : UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print("______offset:\(scrollView.contentOffset)")
     }
 }
 
@@ -100,7 +105,11 @@ struct RxUIExerciseModel {
         RxUIExercise(name: "RxGestureRecognizer"),
         RxUIExercise(name: "RxDatePicker"),
         RxUIExercise(name: "RxTableView"),
-        RxUIExercise(name: "RxTableViewDataSource")
+        RxUIExercise(name: "RxTableViewDataSource"),
+        RxUIExercise(name: "RxTableViewRefresh"),
+        RxUIExercise(name: "RxTableViewSearch"),
+        RxUIExercise(name: "RxTableViewEdit"),
+        RxUIExercise(name: "RxAlamofire")
         ])
 }
 
@@ -114,4 +123,28 @@ struct RxUIExercise : CustomStringConvertible {
         return "name:\(name)"
     }
     
+}
+
+
+//封装tableview用于埋点，监听contentoffset，与delegate不冲突
+class myTableView: UITableView {
+    
+    let disposeBag = DisposeBag()
+    
+    override init(frame: CGRect, style: UITableViewStyle) {
+        super.init(frame: frame, style: style)
+        self.addAOP()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func addAOP() {
+        self.rx.contentOffset.asObservable()
+            .subscribe(onNext: {
+                print("offset:\($0)")
+            })
+            .disposed(by: disposeBag)
+    }
 }

@@ -9,6 +9,7 @@ target 'FirstSwiftApp' do
 	pod 'RxSwift'
     pod 'RxCocoa'
     pod 'RxDataSources'
+    pod "Aspects"
     
     post_install do |installer|
         installer.pods_project.targets.each do |target|

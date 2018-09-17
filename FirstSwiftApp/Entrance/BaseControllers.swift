@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 var baseNavigationControllers : [UINavigationController] = []
 var baseViewControllers : [UIViewController] = []
 var baseSelectedNavi : UINavigationController = UINavigationController.init()
@@ -93,13 +94,18 @@ extension MainViewLogicable where Self : NSObject {
 @objc protocol CustomNaviViewable : class {
     @objc func leftBtnClicked(sender:UIButton)
     @objc func rightBtnClicked(sender:UIButton)
+    func leftButton(btn : UIButton)
+    func rightButton(btn : UIButton)
+    func naviBGView(navi : UIView)
 }
 
+//协议扩展
 extension CustomNaviViewable where Self : UIViewController {
     func configNaviView(title:String){
         let naviView = UIView.init(frame: CGRect.init(x: 0.0, y: 0.0, width: screenWidth, height: phoneTop+64.0))
         naviView.backgroundColor = whiteColor;
         self.view.addSubview(naviView)
+        naviBGView(navi: naviView)
         
         let leftBtn = UIButton.init(type:.custom)
         leftBtn.frame = CGRect.init(x: 8, y: 0, width: 44, height: 44)
@@ -107,6 +113,7 @@ extension CustomNaviViewable where Self : UIViewController {
         leftBtn.addTarget(self, action: #selector(leftBtnClicked(sender:)), for:.touchUpInside)
         leftBtn.backgroundColor = UIColor.orange
         naviView.addSubview(leftBtn)
+        leftButton(btn: leftBtn)
         
         let titleLabel = UILabel.init(frame: CGRect.init(x: leftBtn.right, y: phoneTop+20, width: screenWidth-(leftBtn.right * 2), height: naviView.height - phoneTop - 20))
         titleLabel.text = title
@@ -121,6 +128,7 @@ extension CustomNaviViewable where Self : UIViewController {
         rightBtn.addTarget(self, action: #selector(rightBtnClicked(sender:)), for: .touchUpInside)
         rightBtn.backgroundColor = UIColor.orange
         naviView.addSubview(rightBtn)
+        rightButton(btn: rightBtn)
         
         let naviLine = UIView.init(frame: CGRect.init(x: 0.0, y: naviView.height, width: naviView.width, height: 1.0))
         naviLine.backgroundColor = colorRGBA(red: 220, green: 220, blue: 220, alpha: 1)
@@ -130,6 +138,24 @@ extension CustomNaviViewable where Self : UIViewController {
 }
 
 class RootVC : UIViewController, CustomNaviViewable{
+    
+    var leftBtn : UIButton?
+    
+    var rightBtn : UIButton?
+    
+    var naviView : UIView?
+    
+    func leftButton(btn: UIButton) {
+        leftBtn = btn
+    }
+    
+    func rightButton(btn: UIButton) {
+        rightBtn = btn
+    }
+    
+    func naviBGView(navi: UIView) {
+        naviView = navi
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -147,6 +173,5 @@ class RootVC : UIViewController, CustomNaviViewable{
     func rightBtnClicked(sender: UIButton) {
         
     }
-    
     
 }

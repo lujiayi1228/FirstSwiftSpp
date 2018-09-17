@@ -38,6 +38,7 @@ class ChatMainVC: RootVC {
     func sum(_ number1:Int) -> (Int) -> (Int) ->Int {
         return { number2 in {number1 - number2 - $0} }//可以省略return
     }
+    
 }
 
 

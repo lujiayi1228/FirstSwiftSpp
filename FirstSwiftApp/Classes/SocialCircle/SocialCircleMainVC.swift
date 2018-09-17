@@ -47,6 +47,7 @@ class SocialCircleMainVC: RootVC {
             .bind(to: label.rx.fontSize)
             .disposed(by: disposeBag)
     }
+
 }
 
 extension Reactive where Base : UILabel {

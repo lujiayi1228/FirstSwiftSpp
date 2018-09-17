@@ -15,8 +15,12 @@
 		BB4BBB642140D98C00616A55 /* RxGestureRecognizerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4BBB632140D98C00616A55 /* RxGestureRecognizerVC.swift */; };
 		BB4BBB662141090D00616A55 /* RxDatePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4BBB652141090D00616A55 /* RxDatePickerVC.swift */; };
 		BB6DA822214257D300DA206B /* RxTableViewDataSourcesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DA821214257D300DA206B /* RxTableViewDataSourcesVC.swift */; };
+		BB7192162148FA0600703972 /* UIViewController+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7192152148FA0600703972 /* UIViewController+Swizzling.swift */; };
 		BB732E0C213E62B50025FA83 /* RxLabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB732E0B213E62B50025FA83 /* RxLabelVC.swift */; };
 		BB732E0E213E62E20025FA83 /* RxTextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB732E0D213E62E20025FA83 /* RxTextFieldVC.swift */; };
+		BB74FEE2214606A500E5A895 /* RxTableViewRefreshVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB74FEE1214606A500E5A895 /* RxTableViewRefreshVC.swift */; };
+		BB74FEE421463C5800E5A895 /* RxTableViewSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB74FEE321463C5800E5A895 /* RxTableViewSearchVC.swift */; };
+		BB74FEE721464DCD00E5A895 /* RxTableViewEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB74FEE621464DCD00E5A895 /* RxTableViewEditVC.swift */; };
 		BB83289C211D3447002EEC3A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83289B211D3447002EEC3A /* String+Extension.swift */; };
 		BB8328A0211D3C4B002EEC3A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83289F211D3C4B002EEC3A /* UIView+Extension.swift */; };
 		BB8328A2211D5A4C002EEC3A /* BaseControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8328A1211D5A4C002EEC3A /* BaseControllers.swift */; };
@@ -36,6 +40,8 @@
 		BB9882F8211C2A0200C969DC /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9882F7211C2A0200C969DC /* AppDelegate+Extension.swift */; };
 		BB9882FA211C2CAD00C969DC /* TabbarInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB9882F9211C2CAD00C969DC /* TabbarInfo.plist */; };
 		BB9882FC211C2E7900C969DC /* ConstantDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9882FB211C2E7900C969DC /* ConstantDefine.swift */; };
+		BBCBADC0214A0A2D005440A8 /* RxAlamofireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCBADBF214A0A2D005440A8 /* RxAlamofireVC.swift */; };
+		BBCBADC2214A145D005440A8 /* RxAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCBADC1214A145C005440A8 /* RxAlamofire.swift */; };
 		D16E820B4C76A82521944A5D /* Pods_FirstSwiftApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6C9A26FA40C5E6C9CA80E2 /* Pods_FirstSwiftApp.framework */; };
 		F3BD6FE64AD5AACD5C20C69C /* Pods_FirstSwiftAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA32F27174D66A9CB7EB85B5 /* Pods_FirstSwiftAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -73,8 +79,12 @@
 		BB4BBB632140D98C00616A55 /* RxGestureRecognizerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxGestureRecognizerVC.swift; sourceTree = "<group>"; };
 		BB4BBB652141090D00616A55 /* RxDatePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDatePickerVC.swift; sourceTree = "<group>"; };
 		BB6DA821214257D300DA206B /* RxTableViewDataSourcesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewDataSourcesVC.swift; sourceTree = "<group>"; };
+		BB7192152148FA0600703972 /* UIViewController+Swizzling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Swizzling.swift"; sourceTree = "<group>"; };
 		BB732E0B213E62B50025FA83 /* RxLabelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxLabelVC.swift; sourceTree = "<group>"; };
 		BB732E0D213E62E20025FA83 /* RxTextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTextFieldVC.swift; sourceTree = "<group>"; };
+		BB74FEE1214606A500E5A895 /* RxTableViewRefreshVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewRefreshVC.swift; sourceTree = "<group>"; };
+		BB74FEE321463C5800E5A895 /* RxTableViewSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewSearchVC.swift; sourceTree = "<group>"; };
+		BB74FEE621464DCD00E5A895 /* RxTableViewEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewEditVC.swift; sourceTree = "<group>"; };
 		BB83289B211D3447002EEC3A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		BB83289F211D3C4B002EEC3A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		BB8328A1211D5A4C002EEC3A /* BaseControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseControllers.swift; sourceTree = "<group>"; };
@@ -100,6 +110,8 @@
 		BB9882F9211C2CAD00C969DC /* TabbarInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TabbarInfo.plist; sourceTree = "<group>"; };
 		BB9882FB211C2E7900C969DC /* ConstantDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantDefine.swift; sourceTree = "<group>"; };
 		BB9882FD211C45C400C969DC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBCBADBF214A0A2D005440A8 /* RxAlamofireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAlamofireVC.swift; sourceTree = "<group>"; };
+		BBCBADC1214A145C005440A8 /* RxAlamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAlamofire.swift; sourceTree = "<group>"; };
 		BF6C9A26FA40C5E6C9CA80E2 /* Pods_FirstSwiftApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstSwiftApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA32F27174D66A9CB7EB85B5 /* Pods_FirstSwiftAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstSwiftAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -131,6 +143,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB7192142148F9C300703972 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB9882F7211C2A0200C969DC /* AppDelegate+Extension.swift */,
+				BB7192152148FA0600703972 /* UIViewController+Swizzling.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BB732E0A213E62B50025FA83 /* RxUIExercise */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,10 +163,22 @@
 				BB4BBB612140CE0900616A55 /* RxTwoWayBinding.swift */,
 				BB4BBB632140D98C00616A55 /* RxGestureRecognizerVC.swift */,
 				BB4BBB652141090D00616A55 /* RxDatePickerVC.swift */,
-				BB8FEBE121420EFE001D963F /* RxTableViewVC.swift */,
-				BB6DA821214257D300DA206B /* RxTableViewDataSourcesVC.swift */,
+				BBCBADBF214A0A2D005440A8 /* RxAlamofireVC.swift */,
+				BB74FEE521463C5C00E5A895 /* RxTableView */,
 			);
 			path = RxUIExercise;
+			sourceTree = "<group>";
+		};
+		BB74FEE521463C5C00E5A895 /* RxTableView */ = {
+			isa = PBXGroup;
+			children = (
+				BB8FEBE121420EFE001D963F /* RxTableViewVC.swift */,
+				BB6DA821214257D300DA206B /* RxTableViewDataSourcesVC.swift */,
+				BB74FEE1214606A500E5A895 /* RxTableViewRefreshVC.swift */,
+				BB74FEE321463C5800E5A895 /* RxTableViewSearchVC.swift */,
+				BB74FEE621464DCD00E5A895 /* RxTableViewEditVC.swift */,
+			);
+			path = RxTableView;
 			sourceTree = "<group>";
 		};
 		BB83289D211D3C10002EEC3A /* UIKitExtension */ = {
@@ -260,8 +293,8 @@
 		BB8E673D211BEC9400D424D8 /* Entrance */ = {
 			isa = PBXGroup;
 			children = (
+				BB7192142148F9C300703972 /* Extensions */,
 				BB8E6741211BED4000D424D8 /* AppDelegate.swift */,
-				BB9882F7211C2A0200C969DC /* AppDelegate+Extension.swift */,
 				BB8328A1211D5A4C002EEC3A /* BaseControllers.swift */,
 				BB8328A4211D7B18002EEC3A /* BaseTabbar.swift */,
 				BB9882FD211C45C400C969DC /* Info.plist */,
@@ -273,6 +306,7 @@
 		BB8E673E211BEC9400D424D8 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				BBCBADC1214A145C005440A8 /* RxAlamofire.swift */,
 				BB8FAAA8212D45B90014A4C3 /* NetWorkManager.swift */,
 			);
 			path = NetWork;
@@ -471,6 +505,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FirstSwiftApp/Pods-FirstSwiftApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
@@ -480,6 +515,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
@@ -561,21 +597,27 @@
 				BB4BBB602140C52500616A55 /* RxSliderVC.swift in Sources */,
 				BB8328A2211D5A4C002EEC3A /* BaseControllers.swift in Sources */,
 				BB4BBB642140D98C00616A55 /* RxGestureRecognizerVC.swift in Sources */,
+				BB74FEE421463C5800E5A895 /* RxTableViewSearchVC.swift in Sources */,
 				BB93336D212BF5FD00E0B7A6 /* UserCenterMainVC.swift in Sources */,
+				BB74FEE2214606A500E5A895 /* RxTableViewRefreshVC.swift in Sources */,
 				BB6DA822214257D300DA206B /* RxTableViewDataSourcesVC.swift in Sources */,
 				BB8328A5211D7B18002EEC3A /* BaseTabbar.swift in Sources */,
 				BB8FAAA9212D45B90014A4C3 /* NetWorkManager.swift in Sources */,
 				BB160260213FDA8E00ADD146 /* RxSwitchVC.swift in Sources */,
 				BB732E0C213E62B50025FA83 /* RxLabelVC.swift in Sources */,
+				BBCBADC2214A145D005440A8 /* RxAlamofire.swift in Sources */,
 				BB9882FC211C2E7900C969DC /* ConstantDefine.swift in Sources */,
 				BB933369212BF5DD00E0B7A6 /* ChatMainVC.swift in Sources */,
+				BBCBADC0214A0A2D005440A8 /* RxAlamofireVC.swift in Sources */,
 				BB933367212BF5CA00E0B7A6 /* HomeMainVC.swift in Sources */,
 				BB93336B212BF5EE00E0B7A6 /* SocialCircleMainVC.swift in Sources */,
+				BB7192162148FA0600703972 /* UIViewController+Swizzling.swift in Sources */,
 				BB732E0E213E62E20025FA83 /* RxTextFieldVC.swift in Sources */,
 				BB9882F8211C2A0200C969DC /* AppDelegate+Extension.swift in Sources */,
 				BB8E6742211BED4000D424D8 /* AppDelegate.swift in Sources */,
 				BB865F7E212AB57F00AD8B4A /* UIFont+Extension.swift in Sources */,
 				BB4BBB662141090D00616A55 /* RxDatePickerVC.swift in Sources */,
+				BB74FEE721464DCD00E5A895 /* RxTableViewEditVC.swift in Sources */,
 				BB83289C211D3447002EEC3A /* String+Extension.swift in Sources */,
 				BB8FEBE221420EFE001D963F /* RxTableViewVC.swift in Sources */,
 				BB8E6740211BED2C00D424D8 /* ViewController.swift in Sources */,
